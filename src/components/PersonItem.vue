@@ -15,8 +15,9 @@
         </transition>       
     </template> -->
     <template v-slot:card-content>
-        <p>เงินเดือน : {{ salary }} บาท ตำแหน่งงาน : {{ department }}</p>
-        <p>เพศ : {{ gender }}</p>  
+        <p>เงินเดือน : {{ salary }} บาท, เพศ : {{ gender }}</p>
+        <p>ตำแหน่งงาน : {{ department }}</p> 
+        <p>ทักษะด้านภาษา : {{ language }}</p> 
         <!-- <div>
         <p>ทักษะภาษา:</p>
             <ul>
@@ -58,11 +59,9 @@ export default {
     },
     gender:{
         type:String,
-        required:true
     },
     language:{
         type:String,
-        required:true
     }
     // isVisible: {
     //   type: Boolean,

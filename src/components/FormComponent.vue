@@ -86,7 +86,14 @@ export default {
                 language:this.employee.language
             }
             this.$emit("save",newEmployee)
-
+            this.resetForm();
+        },
+        resetForm(){
+            this.employee.name="";
+            this.employee.salary=0;
+            this.employee.department="";
+            this.employee.gender="";
+            this.employee.language=[];
         }
     }
 }
